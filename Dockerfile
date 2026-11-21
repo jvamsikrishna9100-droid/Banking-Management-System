@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY pom.xml .
 COPY src ./src
+COPY application.properties.example ./src/main/resources/application.properties
 
 RUN mvn clean package -DskipTests
 
